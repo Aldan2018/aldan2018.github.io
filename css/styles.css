@@ -1,0 +1,270 @@
+body {
+  background: linear-gradient(to right, #e6f1ff, white);
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: darkblue;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+}
+li {
+  list-style: none;
+}
+
+/* dropdown_menu */
+.dropdown_block {
+  /* display: none; */
+}
+.dropdown_menu {
+  position: absolute;
+  display: none;
+  top: 50%;
+  right: 20px;
+  background: #7fb6fa;
+  box-shadow: 0px 0px 15px darkblue;
+}
+#menu_icon {
+  position: absolute;
+  display: none;
+  top: 50%;
+  right: 0;
+  transform:translate(0%, -50%);
+}
+.drop_item {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 7px 20px;
+}
+/* dropdown_menu end */
+
+/* main navigation menu */
+.nav_item {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  text-transform: uppercase;
+  float: left;
+  margin-right: 50px;
+  font-size: 20px;
+}
+a:hover{
+  color: white;
+  transition: .2s linear;
+}
+/* main navigation menu end */
+
+.accent_p {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  text-indent: 30px;
+  color: darkblue;
+}
+.accent_span {
+  font-weight: 800;
+  font-family: Oswald;
+}
+.subheadings {
+  display: inline-block;
+}
+.sub_mark {
+  height: 50px;
+}
+.general_wrapper {
+  width: 80%;
+  margin: auto;
+}
+.header_bgrnd {
+  background-color: #7fb6fa;
+  padding: 10px 0;
+}
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.head_logo {
+  height: 7vw;
+  float: left;
+}
+.header_contacts > p {
+  margin: 0 0;
+}
+.pict {
+  height: 15px;
+}
+.block {
+  margin-top: 30px;
+}
+.text_block {
+  text-align: justify;
+}
+.head_block {
+  display: flex;
+  align-items: center;
+}
+.block_in_content {
+  min-height: 375px;
+}
+.block_in_content > img {
+  height: 25vw;
+  border-radius: 20px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+.text_container {
+  margin-left: 30px;
+}
+.serv_wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.serv_item {
+  width: 13vw;
+  background-color: #7fb6fa;
+  padding: 10px;
+  margin: 5px;
+  height: 275px;
+}
+.item_circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #7fb6fa;
+  background-color: white;
+  border-radius: 102px;
+  height: 13vw;
+  width: 13vw;
+}
+.service_item_img {
+  height: 8vw;
+}
+.serv_item_p {
+  text-align: center;
+  color: white
+}
+/* behavior on hover */
+.serv_item:hover {
+  background-color: transparent;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+.serv_item:hover .item_circle {
+  border: 1px solid white;
+  background-color: #7fb6fa;
+  transition: 0.2s linear;
+}
+.serv_item:hover .serv_item_p {
+  color: black;
+  transition: 0.2s linear;
+}
+/* end behavior on hover */
+
+.img_box_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.img_box {
+  width: min-content;
+}
+.img_side {
+  height: 32vw;
+}
+.img_centre {
+  width: 30vw;
+}
+.footer {
+  background-color: #7fb6fa;
+  margin-top: 20px;
+  padding: 20px;
+}
+.block_in_footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_menu {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 0;
+}
+.line_spacing {
+  margin-bottom: -15px;
+}
+
+/* adaptive */
+
+@media (max-width: 1400px) {
+  .serv_wrapper {
+    justify-content: center;
+  }
+}
+@media (max-width: 1200px) {
+  .nav {
+    display: none;
+  }
+  #menu_icon {
+    display: block;
+  }
+  .dropdown_block {
+    order: 1;
+    display: block;
+  }
+  .general_wrapper {
+    width: 90%;
+  }
+  .serv_item {
+    height: 210px;
+  }
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 760px) {
+  .header {
+    padding: 10px 0 10px 0;
+  }
+  .head_logo {
+    height: 12vw;
+  }
+  .header_contacts {
+    display: none;
+  }
+  .serv_item {
+    width: 22vw;
+    height: 220px;
+  }
+  .item_circle {
+    height: 22vw;
+    width: 22vw;
+  }
+  .service_item_img {
+    height: 13vw;
+  }
+  .line_spacing {
+    display: none;
+  }
+}
